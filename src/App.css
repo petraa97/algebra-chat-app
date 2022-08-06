@@ -1,0 +1,138 @@
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  font-family: 'Rubik', sans-serif;
+  background-color: hsla(288, 65%, 95%, 0.697);
+  overflow: hidden;
+}
+
+.header {
+  overflow: visible;
+  width: 100%;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  border-radius: 0 0 85% 85% / 50%;
+  
+}
+
+
+.header:hover {
+  color: rgba(255, 255, 255, 0.768);
+  cursor: pointer;
+}
+
+
+.list {
+  padding: 20px 0;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  list-style: none;
+  padding-left: 0;
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.message {
+  display: flex;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.message.user {
+  flex-direction: row-reverse;
+}
+
+.user > .content {
+  align-items: center;
+}
+
+.message > .avatar {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 10px -10px;
+}
+
+.content > .username {
+
+  display: block;
+  color: hsla(330, 83%, 23%, 0.718);
+  font-size: 15px;
+  padding-bottom: 2px;
+  
+}
+
+.content > .text {
+  padding: 11px;
+  max-width: 400px;
+  margin: 0;
+  border-radius: 12px;
+  background-color: rgba(178, 84, 172, 0.877);
+  color: white;
+  
+}
+
+.content {
+  overflow-wrap: break-word;
+}
+
+.user > .content .text {
+  background-color: rgb(117, 96, 124);
+}
+
+form {
+  display: flex;
+  width: 95%;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto 40px;
+}
+
+input {
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 2px solid hsla(330, 83%, 23%, 0.718);
+  flex-grow: 1;
+  cursor: pointer;
+  caret-color: hsla(330, 83%, 23%, 0.718);
+  
+}
+
+input:focus {
+  border: 5px solid hsla(289, 67%, 79%, 0.718);
+  outline-color: hsla(289, 67%, 79%, 0.718);
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 15px;
+  background-color: hsla(330, 83%, 23%, 0.718);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin-left: 10px;
+  border-radius: 50%;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 970px) {
+  
+  .header{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
